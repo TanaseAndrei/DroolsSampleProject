@@ -15,6 +15,6 @@ public class MegaOfferController {
 
     @PostMapping("/order")
     public Order orderNow(@RequestBody Order order) {
-        return megaOfferService.process(null);
+        return megaOfferService.process(order);
     }
 }
